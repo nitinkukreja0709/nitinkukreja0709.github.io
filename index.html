@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nitin Kukreja — AI Engineer</title>
-<meta name="description" content="Nitin Kukreja — AI engineer at NPCI working on LLM post-training, reinforcement learning and agentic AI. Core contributor to FiMI, India's 24B financial LLM.">
+<title>Nitin Kukreja — AI Research Engineer</title>
+<meta name="description" content="Nitin Kukreja — AI Research Engineer at NPCI working on LLM post-training, reinforcement learning for tool-using agents, and LLM evaluation. Co-author of FiMI, FiMI Banking and IndicBankBench.">
 <meta name="author" content="Nitin Kukreja">
 <link rel="canonical" href="https://nitinkukreja0709.github.io/">
 <link rel="icon" href="favicon.png" type="image/png">
 <meta property="og:type" content="profile">
-<meta property="og:title" content="Nitin Kukreja — AI Engineer">
+<meta property="og:title" content="Nitin Kukreja — AI Research Engineer">
 <meta property="og:description" content="LLM post-training, reinforcement learning and agentic AI for India's payments ecosystem.">
 <meta property="og:url" content="https://nitinkukreja0709.github.io/">
 <meta property="og:image" content="https://nitinkukreja0709.github.io/photo.jpg">
 <meta name="twitter:card" content="summary">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Nitin Kukreja","jobTitle":"AI Engineer","worksFor":{"@type":"Organization","name":"National Payments Corporation of India"},"url":"https://nitinkukreja0709.github.io/","image":"https://nitinkukreja0709.github.io/photo.jpg","sameAs":["https://www.linkedin.com/in/kukrejanitin","https://github.com/nitinkukreja0709","https://orcid.org/0009-0004-2358-7817","https://openreview.net/profile?id=~Nitin_Kukreja1"]}
+{"@context":"https://schema.org","@type":"Person","name":"Nitin Kukreja","jobTitle":"AI Research Engineer","worksFor":{"@type":"Organization","name":"National Payments Corporation of India"},"url":"https://nitinkukreja0709.github.io/","image":"https://nitinkukreja0709.github.io/photo.jpg","sameAs":["https://www.linkedin.com/in/kukrejanitin","https://github.com/nitinkukreja0709","https://orcid.org/0009-0004-2358-7817","https://openreview.net/profile?id=~Nitin_Kukreja1"]}
 </script>
 <style>
 :root{
@@ -67,6 +67,7 @@ p{margin:0 0 12px}
 .card b{display:block;margin-bottom:4px;color:var(--accent)}
 .card span{color:var(--muted);font-size:14.5px}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
+details{margin-top:8px}details summary{cursor:pointer;color:var(--accent);font-size:14px}pre{background:var(--chip);border-radius:8px;padding:10px 12px;overflow-x:auto;font-size:12.5px;line-height:1.5;margin:8px 0 0;white-space:pre}
 .chip{background:var(--chip);border-radius:6px;padding:3px 9px;font-size:14px}
 .hl{background:var(--accent-soft);border-radius:4px;padding:0 4px}
 footer{padding:28px 0 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
@@ -82,11 +83,11 @@ footer{padding:28px 0 48px;color:var(--muted);font-size:14px;border-top:1px soli
 <body>
 <nav><div class="wrap">
   <a class="brand" href="#">Nitin Kukreja</a>
-  <a href="#work">Work</a>
+  <a href="#research">Research</a>
   <a href="#publications">Publications</a>
+  <a class="opt" href="#work">Projects</a>
   <a href="#experience">Experience</a>
-  <a class="opt" href="#projects">Projects</a>
-  <a href="Nitin_Kukreja_Resume.pdf">Resume</a>
+  <a href="Nitin_Kukreja_Resume_Research.pdf">CV</a>
 </div></nav>
 
 <main class="wrap">
@@ -94,7 +95,7 @@ footer{padding:28px 0 48px;color:var(--muted);font-size:14px;border-top:1px soli
   <img src="photo.jpg" alt="Nitin Kukreja" width="132" height="132">
   <div>
     <h1>Nitin Kukreja</h1>
-    <p class="role">AI Engineer at NPCI · LLM post-training, reinforcement learning &amp; agentic AI</p>
+    <p class="role">AI Research Engineer at NPCI · LLM post-training, RL for agents &amp; evaluation</p>
     <div class="links">
       <a class="btn primary" href="mailto:nkukreja25@gmail.com">Email</a>
       <a class="btn" href="https://www.linkedin.com/in/kukrejanitin">LinkedIn</a>
@@ -105,14 +106,36 @@ footer{padding:28px 0 48px;color:var(--muted);font-size:14px;border-top:1px soli
   </div>
 </header>
 
-<section id="about">
-  <h2>About</h2>
-  <p>I build and ship large language models for India's national payments infrastructure. At the <a href="https://www.npci.org.in/">National Payments Corporation of India</a>, I work across the lifecycle of <b>FiMI</b>, NPCI's 24B-parameter financial LLM — from data and multi-stage training to RL post-training, evaluation and agentic deployment in UPI Help and MyUPI.</p>
-  <p>My interests are post-training (SFT, preference optimisation, RL with verifiable rewards), RL environments for tool-using agents, and evaluating LLMs for safety and reliability in high-stakes domains.</p>
+<section id="research">
+  <h2>Research</h2>
+  <p>I work on <b>post-training large language models</b> and making them dependable in high-stakes settings. At the <a href="https://www.npci.org.in/">National Payments Corporation of India</a> (AI Research team) I contribute to <b>FiMI</b>, NPCI's 24B-parameter financial LLM, and to research on safe tool-using banking agents.</p>
+  <p><b>Interests:</b> preference optimisation and RL with verifiable rewards; RL environments, verifiers and reward design for tool-using agents; trajectory-level evaluation of LLM safety and reliability; multilingual (Indic) domain adaptation.</p>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+  <div class="pub">
+    <h3><a href="https://arxiv.org/abs/2609.29167">IndicBankBench: Evaluating Safety and Reliability of Language Model Assistants in Indian Retail Banking</a></h3>
+    <p class="meta">S. Paul, C. Bhushan, H. Sharma, <b>N. Kukreja</b>, Y. Dedhia, K. Doshi, P. Devadiga · arXiv 2026 · <a href="https://arxiv.org/abs/2609.29167">paper</a> · <a href="https://github.com/npci/IndicBankBench">code</a></p>
+    <details><summary>BibTeX</summary><pre>@article{paul2026indicbankbench,
+  title   = {IndicBankBench: Evaluating Safety and Reliability of Language Model Assistants in Indian Retail Banking},
+  author  = {Paul, Suvradip and Bhushan, Chandra and Sharma, Harsh and Kukreja, Nitin and Dedhia, Yatharth and Doshi, Keyur and Devadiga, Prashant},
+  journal = {arXiv preprint arXiv:2609.29167},
+  year    = {2026}
+}</pre></details>
+  </div>
+  <div class="pub">
+    <h3><a href="https://arxiv.org/abs/2609.03960">FiMI Banking: A Sovereign Model for Indian Retail Banking</a></h3>
+    <p class="meta">NPCI AI Research Team (18 authors, alphabetical; incl. <b>N. Kukreja</b>) · arXiv 2026 · <a href="https://arxiv.org/abs/2609.03960">paper</a></p>
+  </div>
+  <div class="pub">
+    <h3><a href="https://arxiv.org/abs/2602.05794">FiMI: A Domain-Specific Language Model for Indian Finance Ecosystem</a></h3>
+    <p class="meta">NPCI (40 authors, alphabetical; incl. <b>N. Kukreja</b>) · arXiv 2026 · <a href="https://arxiv.org/abs/2602.05794">paper</a></p>
+  </div>
 </section>
 
 <section id="work">
-  <h2>Selected work</h2>
+  <h2>Research projects</h2>
   <div class="item">
     <h3>FiMI — a 24B domain-specific financial LLM</h3>
     <p class="meta">NPCI · <a href="https://arxiv.org/abs/2602.05794">arXiv:2602.05794</a></p>
@@ -142,22 +165,6 @@ footer{padding:28px 0 48px;color:var(--muted);font-size:14px;border-top:1px soli
     <ul>
       <li>Multi-agent backend (LangGraph, MCP, FastAPI) for UPI disputes, mandates and escalation in 5 languages, with RAG / Graph-RAG grounding and guardrails.</li>
     </ul>
-  </div>
-</section>
-
-<section id="publications">
-  <h2>Publications</h2>
-  <div class="pub">
-    <h3><a href="https://arxiv.org/abs/2609.29167">IndicBankBench: Evaluating Safety and Reliability of Language Model Assistants in Indian Retail Banking</a></h3>
-    <p class="meta">arXiv, 2026 · co-author</p>
-  </div>
-  <div class="pub">
-    <h3><a href="https://arxiv.org/abs/2609.03960">FiMI Banking: A Sovereign Model for Indian Retail Banking</a></h3>
-    <p class="meta">arXiv, 2026 · co-author</p>
-  </div>
-  <div class="pub">
-    <h3><a href="https://arxiv.org/abs/2602.05794">FiMI: A Domain-Specific Language Model for Indian Finance Ecosystem</a></h3>
-    <p class="meta">arXiv, 2026 · co-author</p>
   </div>
 </section>
 
